@@ -60,7 +60,7 @@ installThemeQuestion(){
 }
 
 repair(){
-    bash <(curl https://raw.githubusercontent.com/Angelillo15/IceMinecraftTheme/main/repair.sh)
+    bash <(curl https://raw.githubusercontent.com/Lesak12/Tema-pterodactylr/main/install.sh)
 }
 
 restoreBackUp(){
