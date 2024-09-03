@@ -15,14 +15,14 @@ installTheme(){
     tar -cvf Tema-pterodactylr.tar.gz pterodactyl
     echo "Installing theme..."
     cd /var/www/pterodactyl
-    rm -r Tema-pterodactylr
+    rm -r IceMinecraftTheme
     git clone https://github.com/Lesak12/Tema-pterodactylr.git
     cd Tema-pterodactylr
-    rm /var/www/pterodactyl/resources/scripts/Tema-pterodactylr.css
+    rm /var/www/pterodactyl/resources/scripts/IceMinecraftTheme.css
     rm /var/www/pterodactyl/resources/scripts/index.tsx
     rm /var/www/pterodactyl/resources/scripts/components/server/console/Console.tsx
     mv resources/scripts/index.tsx /var/www/pterodactyl/resources/scripts/index.tsx
-    mv resources/scripts/IceMinecraftTheme.css /var/www/pterodactyl/resources/scripts/Tema-pterodactylr.css
+    mv resources/scripts/IceMinecraftTheme.css /var/www/pterodactyl/resources/scripts/IceMinecraftTheme.css
     mv resources/scripts/components/server/console/Console.tsx /var/www/pterodactyl/resources/scripts/components/server/console/Console.tsx
     cd /var/www/pterodactyl
 
@@ -66,8 +66,8 @@ repair(){
 restoreBackUp(){
     echo "Restoring backup..."
     cd /var/www/
-    tar -xvf Tema-pterodactylr.tar.gz
-    rm Tema-pterodactylr.tar.gz
+    tar -xvf IceMinecraftTheme.tar.gz
+    rm IceMinecraftTheme.tar.gz
 
     cd /var/www/pterodactyl
     yarn build:production
