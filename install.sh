@@ -12,7 +12,7 @@ clear
 
 installTheme(){
     cd /var/www/
-    tar -cvf Tema-pterodactylr.tar.gz pterodactyl
+    tar -cvf IceMinecraftTheme.tar.gz pterodactyl
     echo "Installing theme..."
     cd /var/www/pterodactyl
     rm -r IceMinecraftTheme
