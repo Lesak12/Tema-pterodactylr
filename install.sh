@@ -17,7 +17,7 @@ installTheme(){
     cd /var/www/pterodactyl
     rm -r IceMinecraftTheme
     git clone https://github.com/Lesak12/Tema-pterodactylr.git
-    cd Tema-pterodactylr
+    cd IceMinecraftTheme
     rm /var/www/pterodactyl/resources/scripts/IceMinecraftTheme.css
     rm /var/www/pterodactyl/resources/scripts/index.tsx
     rm /var/www/pterodactyl/resources/scripts/components/server/console/Console.tsx
